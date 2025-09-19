@@ -1,0 +1,24 @@
+/* Tailwind import */
+@import 'tailwindcss';
+
+/* Bootstrap import */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Source files (untuk scanning Tailwind classes) */
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+/* Custom theme */
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 
+        'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Optional: custom Tailwind overrides / utilities bisa ditambahkan di bawah ini */
+/* Contoh: tombol kustom */
+.btn-tailwind {
+    @apply bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600;
+}
