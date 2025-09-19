@@ -42,23 +42,23 @@ If required, the default API credentials used are:
 🚀 Installation
 
 Clone the repository:
-
+```bash
 git clone https://github.com/<your-username>/<your-repo>.git
 cd <your-repo>
 
 
 Install dependencies:
-
+```bash
 composer install
 npm install && npm run build
 
 
 Setup environment file:
-
+```bash
 cp .env.example .env
 php artisan key:generate
 
 Run the application:
-
+```bash
 php artisan serve  and
 npm run dev
